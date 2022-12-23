@@ -1,0 +1,156 @@
+:root{
+
+
+  --clr-primary-red:hsl(0, 78%, 62%);
+  --clr-primary-cyan:hsl(180, 62%, 55%);
+  --clr-primary-orange:hsl(34, 97%, 64%);
+  --clr-primary-blue:hsl(212, 86%, 64%);
+
+  --clr-neutral-vdarkblue:hsl(234, 12%, 34%);
+  --clr-neutral-grayishblue:hsl(229, 6%, 66%);
+  --clr-neutral-lightgray:hsl(0, 0%, 98%);
+
+
+  --ff-accent: 'Poppins', sans-serif;
+  --fw-light:200;
+  --fw-regular:400;
+  --fw-bold:600;
+}
+
+
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+
+
+  width: 80%;
+  background-color: var(--clr-neutral-lightgray);
+  font-size: 15px;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 40px auto;
+
+}
+
+
+.title{
+
+  line-height: 1em;
+
+}
+
+.title h1{
+
+  color: var(--clr-neutral-grayishblue);
+  font-family: var(--ff-accent);
+  font-weight: var(--fw-light);
+
+}
+
+.title h2{
+
+  color:var(--clr-neutral-vdarkblue);
+  font-family: var(--ff-accent);
+  font-size: 2em;
+
+}
+
+.topcontainer p{
+
+  color: var(--clr-neutral-grayishblue);
+  font-weight: var(--fw-light);
+  white-space:pre-wrap;
+  font-size: 15px;
+
+}
+
+.col{
+
+  position:relative;
+  width: 350px;
+  margin: 18px auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  background:#fff;
+  padding: 20px;
+
+
+}
+
+.col img{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 15px;
+}
+
+.col::after{
+
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+
+}
+
+
+.col h3{
+  color: var(--clr-neutral-vdarkblue);
+  font-family: var(--ff-accent);
+  text-align: left;
+}
+
+.col p{
+
+color:var(--clr-neutral-grayishblue);
+font-family: var(--ff-accent);
+text-align: left;
+
+
+}
+
+.col-red::after{
+
+  background-color: var(--clr-primary-red);
+}
+
+.col-cyan::after{
+  background-color: var(--clr-primary-cyan)
+  }
+
+.col-orange::after{
+
+  background-color: var(--clr-primary-orange);
+}
+
+.col-blue::after{
+  background-color: var(--clr-primary-blue);
+}
+
+
+@media (min-width:1150px) {
+  .boxes{
+
+    display: flex;
+    align-items: center;
+
+  }
+
+
+  .col{
+
+    margin: 18px;
+  }
+}
